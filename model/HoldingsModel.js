@@ -1,7 +1,6 @@
-const { model } = require("mongoose");
-
-const { HoldingsSchema } = require("../schemas/HoldingsSchema");
+import { model } from "mongoose";
+import HoldingsSchema from "../schemas/HoldingsSchema.js";
 
 const HoldingsModel = new model("holding", HoldingsSchema);
 
-module.exports = { HoldingsModel };
+export default HoldingsModel;
